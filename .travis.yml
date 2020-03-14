@@ -3,7 +3,7 @@ node_js: --lts
 before_script:
   - git config user.name "qcminecraft"
   - git config user.email "qcmc@qcminecraft.com"
-  - sed -i'' "s~https://github.com/oieasy/lc_posts.git~https://$3c6f62b19635fe6757a16debc7ddc3f66df58a0d@github.com/oieasy/lc_posts.git~" _config.yml
+  - sed -i'' "s~https://github.com/oieasy/lc_posts.git~https://$3c6f62b19635fe6757a16debc7ddc3f66df58a0d:x-oauth-basic@github.com/oieasy/lc_posts.git~" _config.yml
 script:
   - hexo g
   - hexo d
