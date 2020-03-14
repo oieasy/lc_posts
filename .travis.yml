@@ -1,19 +1,9 @@
 language: node_js
-node_js:
-  - '10'
-
-branches:
-  only:
-  - master
-
-before_install:
-- git config --global user.name "AUTOBUILD"
-- git config --global user.email "nyaruko@pm.me"
-- sed -i'' "s~https://github.com/oieasy/lc_posts.git~https://3c6f62b19635fe6757a16debc7ddc3f66df58a0d@github.com/oieasy/lc_posts.git~" _config.yml
-
-install:
-- npm install hexo-cli -g
-- npm install
-
+node_js: --lts
+before_script:
+  - git config user.name "qcminecraft"
+  - git config user.email "qcmc@qcminecraft.com"
+  - sed -i'' "s~https://github.com/oieasy/lc_posts.git~https://$3c6f62b19635fe6757a16debc7ddc3f66df58a0d@github.com/oieasy/lc_posts.git~" _config.yml
 script:
-- npm run deploy
+  - hexo g
+  - hexo d
