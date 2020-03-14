@@ -104,7 +104,7 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://gh_token@github.com/oieasy/lc_posts.git
+  repository: https://_token_@github.com/oieasy/lc_posts.git
   branch: gh-pages
   
 jsonContent:
