@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "lc_posts",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "hexo generate",
@@ -24,5 +24,8 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
+  },
+  "scripts": {
+    "deploy": "hexo clean && hexo d -g"
   }
 }
