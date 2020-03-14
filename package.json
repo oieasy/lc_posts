@@ -26,5 +26,5 @@
   },
   "scripts": {
     "deploy": "hexo clean && hexo d -g"
-  },
+  }
 }
